@@ -1,0 +1,91 @@
+.container{
+
+    /* if width and height are removed it will take the whole page */
+    height: 700;
+    width: 900;
+
+
+    display: grid;
+
+    /* Specify number of columns and rows in the Grid Layout */
+
+    /* Makes 3 columns of 133px each */
+    grid-template-columns: 133px 133px 133px;
+
+    /* Makes 3 rows of 133px each */
+    grid-template-rows: 133px 133px 133px;
+
+    /* another way of using rows/columns using repeat and fr */
+
+    /* This creates 3 colums (3 times repeated) and assigns 1 fractional unit. ie uniformly to all parts */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* We can also write */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* row gap and column gap */
+    row-gap: 12px;
+    column-gap: 12px;
+
+
+
+    /* Justify */
+
+    /* What justify does is that it horizontally alligns the items to the property defined inside it's 
+        particular grid */
+
+    justify-items: center;
+    /* justify-items: start;
+    justify-items: end; */
+
+
+    /* To align items vertically we use align-items (check for other values)*/
+
+    align-items: center;
+
+    /* To allign in both directions */
+
+    /* This alligns in both horizontal and vertical direction (check for other values)*/
+    place-items: center;
+
+
+}
+.items{
+    height: 122;
+    width: 122;
+    /* If not width or height is added, it will take the full space assigned to it in the container class */
+
+    }
+
+.item1{
+    
+    /* This makes the item1 (the class) start from the 1st vertical line to 3rd vertical line or n-1 column */
+    /* it pushes all other grid boxes accordingly */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* There is a shortcut to grid-column-start and grid-column-end */
+
+    /* This means that the item (here item1) will start from column 1 and will span 3 full columns  */
+    /* definition is a little different */
+    grid-column: 1 / span 3;
+}
+
+.item2{
+
+    /* Jusitfy */
+    /* For individual items we use justify-self rather than justify-items */
+    justify-self: center;
+    /* justify-self: start;
+    justify-self: end; */
+
+
+    /* For alligning vertically (check for other values)*/
+    align-self: center;
+
+    /* for alligment in both directions (check for other values)*/
+    place-self: center;
+
+
+    width: 100vw;
+}
