@@ -14,6 +14,7 @@ selected by one of the selectors in that list. This is useful for writing large 
   cursor: pointer;
 
 }
+</Code>
 
 /* The above is equivalent to the following */
 
@@ -24,10 +25,8 @@ main p:hover,
 footer p:hover {
 
   color: red;
-
   cursor: pointer;
-  
 }
-</Code>
+
 
 Pseudo-elements are not valid in the selector list for :is().
