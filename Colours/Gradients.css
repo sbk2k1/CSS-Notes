@@ -1,0 +1,19 @@
+
+/* To apply gradient of colour only to text, we clip background color to only text part
+and remove color from text (ie transparent) */
+
+.text {
+  font-size: 72px;
+  background: -webkit-linear-gradient(from color, to color);
+  -webkit-background-clip: text;
+  background-clip: text; /*This removes the background from all parts except beind the*/
+  -webkit-text-fill-color: transparent; /*This removes the color from text making it transparent*/
+}
+
+/* Without background-clip there will be gradient in the whole background of the div / element */
+
+.backgradient{
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); 
+}
