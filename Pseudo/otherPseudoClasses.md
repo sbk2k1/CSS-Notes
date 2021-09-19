@@ -16,7 +16,7 @@ cursor: pointer;
 }
 ____________________________________________________________________
 
-/_ The above is equivalent to the following _/
+ The above is equivalent to the following 
 
 header p:hover,
 
@@ -27,5 +27,6 @@ footer p:hover {
 color: red;
 cursor: pointer;
 }
+____________________________________________________________________
 
 Pseudo-elements are not valid in the selector list for :is().
